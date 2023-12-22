@@ -1,0 +1,84 @@
+/* iCheck plugin Polaris skin
+----------------------------------- */
+
+/* Estilos para la casilla de verificación y el botón de radio en la skin Polaris */
+.icheckbox_polaris,
+.iradio_polaris {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    height: 29px;
+    background: url(polaris.png) no-repeat;
+    /* Imagen de fondo para la casilla de verificación y el botón de radio en la skin Polaris */
+    border: none;
+    cursor: pointer;
+}
+
+/* Estado por defecto de la casilla de verificación */
+.icheckbox_polaris {
+    background-position: 0 0;
+}
+
+/* Estado de hover (sobre) de la casilla de verificación */
+.icheckbox_polaris.hover {
+    background-position: -31px 0;
+}
+
+/* Estado de casilla marcada de la casilla de verificación */
+.icheckbox_polaris.checked {
+    background-position: -62px 0;
+}
+
+/* Estado de casilla deshabilitada de la casilla de verificación */
+.icheckbox_polaris.disabled {
+    background-position: -93px 0;
+    cursor: default;
+}
+
+/* Estado de casilla marcada y deshabilitada de la casilla de verificación */
+.icheckbox_polaris.checked.disabled {
+    background-position: -124px 0;
+}
+
+/* Estado por defecto del botón de radio */
+.iradio_polaris {
+    background-position: -155px 0;
+}
+
+/* Estado de hover (sobre) del botón de radio */
+.iradio_polaris.hover {
+    background-position: -186px 0;
+}
+
+/* Estado de botón de radio marcado */
+.iradio_polaris.checked {
+    background-position: -217px 0;
+}
+
+/* Estado de botón de radio deshabilitado */
+.iradio_polaris.disabled {
+    background-position: -248px 0;
+    cursor: default;
+}
+
+/* Estado de botón de radio marcado y deshabilitado */
+.iradio_polaris.checked.disabled {
+    background-position: -279px 0;
+}
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    .icheckbox_polaris,
+    .iradio_polaris {
+        background-image: url(polaris@2x.png);
+        /* Imagen de fondo de alta resolución para pantallas Retina en la skin Polaris */
+        -webkit-background-size: 310px 31px;
+        background-size: 310px 31px;
+    }
+}

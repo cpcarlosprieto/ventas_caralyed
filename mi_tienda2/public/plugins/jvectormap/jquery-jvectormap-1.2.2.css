@@ -1,0 +1,74 @@
+/* Estilos para las etiquetas de los mapas jVectorMap */
+.jvectormap-label {
+    position: absolute;
+    /* Posición absoluta en relación con el primer contenedor posicionado padre */
+    display: none;
+    /* Inicialmente oculta */
+    border: solid 1px #CDCDCD;
+    /* Borde de 1 píxel sólido con color #CDCDCD */
+    -webkit-border-radius: 3px;
+    /* Borde redondeado en navegadores WebKit */
+    -moz-border-radius: 3px;
+    /* Borde redondeado en navegadores Gecko */
+    border-radius: 3px;
+    /* Borde redondeado estándar */
+    background: #292929;
+    /* Fondo oscuro */
+    color: white;
+    /* Texto en color blanco */
+    font-size: 10px !important;
+    /* Tamaño de fuente de 10 píxeles, !important para prioridad */
+    padding: 3px;
+    /* Relleno de 3 píxeles */
+    z-index: 9999;
+    /* Z-index alto para estar encima de otros elementos */
+}
+
+/* Estilos para los botones de zoom de jVectorMap */
+.jvectormap-zoomin,
+.jvectormap-zoomout {
+    position: absolute;
+    /* Posición absoluta */
+    top: 100%;
+    /* En la parte inferior del contenedor padre */
+    margin-top: -25px;
+    /* Corrección para alinear adecuadamente */
+    -webkit-border-radius: 2px;
+    /* Borde redondeado en navegadores WebKit */
+    -moz-border-radius: 2px;
+    /* Borde redondeado en navegadores Gecko */
+    border-radius: 2px;
+    /* Borde redondeado estándar */
+    background: #d2d6de;
+    /* Fondo gris claro */
+    padding: 5px;
+    /* Relleno de 5 píxeles */
+    color: #444;
+    /* Texto en color oscuro */
+    cursor: pointer;
+    /* Cursor de puntero */
+    line-height: 10px;
+    /* Altura de línea */
+    text-align: center;
+    /* Alineación del texto al centro */
+    font-weight: bold;
+    /* Texto en negrita */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* Sombra ligera */
+}
+
+/* Estilos específicos para el botón de zoom-in */
+.jvectormap-zoomin {
+    left: 100%;
+    /* En el lado derecho del contenedor padre */
+    margin-left: -50px;
+    /* Corrección para alinear adecuadamente */
+}
+
+/* Estilos específicos para el botón de zoom-out */
+.jvectormap-zoomout {
+    left: 100%;
+    /* En el lado derecho del contenedor padre */
+    margin-left: -30px;
+    /* Corrección para alinear adecuadamente */
+}

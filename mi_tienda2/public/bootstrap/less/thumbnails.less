@@ -1,0 +1,36 @@
+//
+// Thumbnails
+// --------------------------------------------------
+
+// Mezcla y ajusta la clase de imagen regular
+.thumbnail {
+  display: block;
+  padding: @thumbnail-padding;
+  margin-bottom: @line-height-computed;
+  line-height: @line-height-base;
+  background-color: @thumbnail-bg;
+  border: 1px solid @thumbnail-border;
+  border-radius: @thumbnail-border-radius;
+  .transition(border .2s ease-in-out);
+
+  // Estilo para imágenes dentro del contenedor de miniaturas y enlaces que contienen imágenes
+  >img,
+  a>img {
+    &:extend(.img-responsive);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Agrega un estado de hover para versiones vinculadas solamente
+  a&:hover,
+  a&:focus,
+  a&.active {
+    border-color: @link-color;
+  }
+
+  // Leyendas de imágenes
+  .caption {
+    padding: @thumbnail-caption-padding;
+    color: @thumbnail-caption-color;
+  }
+}

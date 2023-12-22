@@ -1,0 +1,70 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+// Floats
+// -------------------------
+
+// Agrega una regla de limpieza para manejar correctamente los elementos flotantes y evitar problemas de diseño relacionados con el colapso del contenedor.
+.clearfix {
+  .clearfix();
+}
+
+// Centra el elemento en bloque horizontalmente utilizando la propiedad `margin`.
+.center-block {
+  .center-block();
+}
+
+// Aplica la propiedad `float: right !important;` para hacer que el elemento flote hacia la derecha.
+.pull-right {
+  float: right !important;
+}
+
+// Aplica la propiedad `float: left !important;` para hacer que el elemento flote hacia la izquierda.
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Nota: Se ha marcado como obsoleta en favor de .hidden o .sr-only (según corresponda) en v3.0.1.
+// Oculta el elemento estableciendo `display: none !important;`.
+.hide {
+  display: none !important;
+}
+
+// Muestra el elemento estableciendo `display: block !important;`.
+.show {
+  display: block !important;
+}
+
+// Hace que el elemento sea invisible estableciendo `visibility: hidden;`.
+.invisible {
+  visibility: hidden;
+}
+
+// Aplica una clase específica para ocultar el texto de manera accesible (se usa en algunos casos específicos para ocultar texto pero mantenerlo accesible para lectores de pantalla).
+.text-hide {
+  .text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+// Oculta el elemento estableciendo `display: none !important;`.
+.hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+// Define la posición `fixed` para elementos que están destinados a ser fijados en la pantalla, como se utiliza en el plugin de Affix de Bootstrap.
+.affix {
+  position: fixed;
+}

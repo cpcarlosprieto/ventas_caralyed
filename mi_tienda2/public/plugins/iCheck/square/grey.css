@@ -1,0 +1,84 @@
+/* iCheck plugin Square skin, grey
+----------------------------------- */
+
+/* Estilos para la casilla de verificación y el botón de radio en la variante grey de la skin Square */
+.icheckbox_square-grey,
+.iradio_square-grey {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(grey.png) no-repeat;
+    /* Imagen de fondo para la variante grey de la casilla de verificación y el botón de radio en la skin Square */
+    border: none;
+    cursor: pointer;
+}
+
+/* Estado por defecto de la casilla de verificación en la variante grey */
+.icheckbox_square-grey {
+    background-position: 0 0;
+}
+
+/* Estado de hover (sobre) de la casilla de verificación en la variante grey */
+.icheckbox_square-grey.hover {
+    background-position: -24px 0;
+}
+
+/* Estado de casilla marcada de la casilla de verificación en la variante grey */
+.icheckbox_square-grey.checked {
+    background-position: -48px 0;
+}
+
+/* Estado de casilla deshabilitada de la casilla de verificación en la variante grey */
+.icheckbox_square-grey.disabled {
+    background-position: -72px 0;
+    cursor: default;
+}
+
+/* Estado de casilla marcada y deshabilitada de la casilla de verificación en la variante grey */
+.icheckbox_square-grey.checked.disabled {
+    background-position: -96px 0;
+}
+
+/* Estado por defecto del botón de radio en la variante grey */
+.iradio_square-grey {
+    background-position: -120px 0;
+}
+
+/* Estado de hover (sobre) del botón de radio en la variante grey */
+.iradio_square-grey.hover {
+    background-position: -144px 0;
+}
+
+/* Estado de botón de radio marcado en la variante grey */
+.iradio_square-grey.checked {
+    background-position: -168px 0;
+}
+
+/* Estado de botón de radio deshabilitado en la variante grey */
+.iradio_square-grey.disabled {
+    background-position: -192px 0;
+    cursor: default;
+}
+
+/* Estado de botón de radio marcado y deshabilitado en la variante grey */
+.iradio_square-grey.checked.disabled {
+    background-position: -216px 0;
+}
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    .icheckbox_square-grey,
+    .iradio_square-grey {
+        background-image: url(grey@2x.png);
+        /* Imagen de fondo de alta resolución para pantallas Retina en la variante grey de la skin Square */
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}

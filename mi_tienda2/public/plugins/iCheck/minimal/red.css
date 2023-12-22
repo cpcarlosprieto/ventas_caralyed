@@ -1,0 +1,84 @@
+/* iCheck plugin Minimal skin, red
+----------------------------------- */
+
+/* Estilos para la casilla de verificación y el botón de radio en la skin Minimal con color rojo */
+.icheckbox_minimal-red,
+.iradio_minimal-red {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url(red.png) no-repeat;
+    /* Imagen de fondo para la casilla de verificación y el botón de radio en color rojo */
+    border: none;
+    cursor: pointer;
+}
+
+/* Estado por defecto de la casilla de verificación */
+.icheckbox_minimal-red {
+    background-position: 0 0;
+}
+
+/* Estado de hover (sobre) de la casilla de verificación */
+.icheckbox_minimal-red.hover {
+    background-position: -20px 0;
+}
+
+/* Estado de casilla marcada de la casilla de verificación */
+.icheckbox_minimal-red.checked {
+    background-position: -40px 0;
+}
+
+/* Estado de casilla deshabilitada de la casilla de verificación */
+.icheckbox_minimal-red.disabled {
+    background-position: -60px 0;
+    cursor: default;
+}
+
+/* Estado de casilla marcada y deshabilitada de la casilla de verificación */
+.icheckbox_minimal-red.checked.disabled {
+    background-position: -80px 0;
+}
+
+/* Estado por defecto del botón de radio */
+.iradio_minimal-red {
+    background-position: -100px 0;
+}
+
+/* Estado de hover (sobre) del botón de radio */
+.iradio_minimal-red.hover {
+    background-position: -120px 0;
+}
+
+/* Estado de botón de radio marcado */
+.iradio_minimal-red.checked {
+    background-position: -140px 0;
+}
+
+/* Estado de botón de radio deshabilitado */
+.iradio_minimal-red.disabled {
+    background-position: -160px 0;
+    cursor: default;
+}
+
+/* Estado de botón de radio marcado y deshabilitado */
+.iradio_minimal-red.checked.disabled {
+    background-position: -180px 0;
+}
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    .icheckbox_minimal-red,
+    .iradio_minimal-red {
+        background-image: url(red@2x.png);
+        /* Imagen de fondo de alta resolución para pantallas Retina en color rojo */
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}

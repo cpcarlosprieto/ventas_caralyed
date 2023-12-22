@@ -1,0 +1,14 @@
+.zona_impresion {
+	position: absolute;
+	/* Establece la posición absoluta, probablemente para ubicar el área en una posición específica en la página. */
+	box-sizing: border-box;
+	/* El modelo de caja incluye el borde en el ancho y alto total del elemento. */
+	width: 60%;
+	/* Establece el ancho del área de impresión al 60% del contenedor padre. */
+	-webkit-box-shadow: 7px 6px 21px -2px rgba(0, 0, 0, 0.58);
+	/* Sombra para navegadores WebKit (Chrome, Safari). */
+	-moz-box-shadow: 7px 6px 21px -2px rgba(0, 0, 0, 0.58);
+	/* Sombra para navegadores Mozilla (Firefox). */
+	box-shadow: 7px 6px 21px -2px rgba(0, 0, 0, 0.58);
+	/* Sombra estándar que se aplicará en otros navegadores. */
+}
